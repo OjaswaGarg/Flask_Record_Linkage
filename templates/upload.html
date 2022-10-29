@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<title>Record Linkage Project</title>
+<link rel="stylesheet" href="styles.css">
+<link rel = "icon" href = "/static/Logo.png" type = "image/png">
+<style>
+	body {background-color: powderblue;}
+	h1   {color: blue;}
+	p    {color: red;}
+</style>
+<h2>Select Two CSVs to upload</h2>
+<body>
+<a href="https://ojaswagarg-streamlit2-streamlit-app-iaac8i.streamlitapp.com/">
+<img src="/static/Data_Linkage.png"  alt="Record Linkage">
+</a>
+</body>
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="files[]" multiple="true" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit">
+	</p>
+</form>

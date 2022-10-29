@@ -1,0 +1,13 @@
+<!doctype html>
+<title>Record Linkage Project</title>
+<link rel = "icon" href = "/static/Logo.png" type = "image/png">
+<style>
+	body {background-color: powderblue;}
+	h1   {color: blue;}
+	p    {color: red;}
+</style>
+<img src="/static/work_done.jpg"  width="400" 
+height="500"  alt="Record Linkage">
+{% for filename in files %}
+<a href="{{url_for('download_file', filename=filename) }}">{{ filename }}</a><br />
+{% endfor %}
