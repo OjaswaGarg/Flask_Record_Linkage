@@ -1,1 +1,7 @@
-Flask==1.0.2
+Flask
+Jinja2
+pandas
+pickle
+recordlinkage
+MarkupSafe
+Werkzeug
