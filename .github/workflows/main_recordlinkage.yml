@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'RecordLinkage'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_231CA15031B44C8F915E63C5C08571F0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1702AFA3BB7B40B9A8FF49D509DC5810 }}
