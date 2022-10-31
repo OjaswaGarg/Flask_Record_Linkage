@@ -97,7 +97,6 @@ def record_linkage_func(list_df):
     model = pickle.load(open('model_pkl.pkl', 'rb'))
     features1['Match']=model.predict_proba(input1)[:,1]
     features1.reset_index(inplace=True)
-    features1=features1[features1["level_0"]!=features1["level_1"]]
     show=features1[features1['Match']>=0]
     show.sort_values(['Match'],ascending=False,inplace=True)
     show=show.reset_index(drop=True)
