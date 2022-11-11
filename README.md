@@ -13,5 +13,5 @@ Through our project we wanted to provide a pipeline which helps in matching reco
 
 ## How to run
 - Run the command  ``` pip3 install -r requirements.txt ``` to install all the dependencies (Python 3).
-- The script, ```test.py``` is the final script. The datasets are already provided. 
+- The script, ```record_linkage.py``` and ```test.py``` are the final scripts. The sample datasets are already provided. 
 - Sample way to run the script via terminal is using the command ```python test.py output1.csv output2.csv output.csv```
