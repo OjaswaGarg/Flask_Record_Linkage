@@ -6,6 +6,7 @@
 
 This github repository helps in hosting a Flask API on Azure.
 The record linkage models can be accessed with the help of below links-
+https://i.ibb.co/VCgC5g3/Record-Linkage-azure.png
 - https://recordlinkage.azurewebsites.net/
 - https://bit.ly/record_linkage
 
